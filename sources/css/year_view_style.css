@@ -1,0 +1,43 @@
+.year_view{
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap:8px;
+    /*grid-template-columns: 250px 250px 250px 250px ;*/
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 19px 191px 19px 191px 19px 191px;
+    /*grid-template-columns: auto auto auto;*/
+    /*background-color: #2196F3;*/
+    /*padding: 5px;*/
+    /*margin:33px 3px;*/
+    margin: 0px 3px;
+}
+.year_view .weekdays_table th, td{
+    padding: 0px 5px;
+}
+
+/*.year_view .weekdays_table .circle{*/
+    /*background-color: white;*/
+/*}*/
+/*.year_view .weekdays_table .circle.red{*/
+    /*background-color : red;*/
+    /*color:white;*/
+/*}*/
+
+.month_in_year {
+    /*background-color: rgba(255, 255, 255, 0.8);*!*/
+    border: 1px hidden rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    /*font-size: 30px;*/
+    text-align: center;
+
+}
+
+.year_view_month{
+    font-family: 'HelveticaNeue',serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.1px;
+    text-align: left;
+    color: #e30613;
+    padding-left: 5px;
+}

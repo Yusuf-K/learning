@@ -45,7 +45,13 @@ function getCurrentDays (current_month, current_year) {
 
         var appendix = 42 - days[quantity_of_days - 1] - preappendix;
         days = days_conc.splice(days_conc.length - preappendix, days_conc.length).concat(days, days_append.splice(0, appendix));
-    var table_header = '<tr><th><span class="weekdays">MON</spanclass></th><th><span class="weekdays">TUE</span></th><th><span class="weekdays">WED</span></th><th><span class="weekdays">THU</span></th><th><span class="weekdays">FRI</span></th><th><span class="weekdays">SAT</span></th><th><span class="weekdays">SUN</span></th></tr>';
+    var table_header = '<tr><th><span class="weekdays">MON</span></th>'+
+        '<th><span class="weekdays">TUE</span></th>'+
+        '<th><span class="weekdays">WED</span></th>'+
+        '<th><span class="weekdays">THU</span></th>'+
+        '<th><span class="weekdays">FRI</span></th>'+
+        '<th><span class="weekdays">SAT</span></th>'+
+        '<th><span class="weekdays">SUN</span></th></tr>';
     for (var i = 0; i < 42; i++) {
         if (i < preappendix || i >= quantity_of_days + preappendix) {
             days[i] = '<td><span class="circle out">' + days[i] + '</span></td>'
@@ -63,6 +69,6 @@ function getCurrentDays (current_month, current_year) {
     }
     days[41] = days[41] + '</tr>';
     return table_header + days.join(' ');
-    console.log(table_header + days.join(' '));
+    // console.log(table_header + days.join(' '));
 
 }

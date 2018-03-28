@@ -1,0 +1,94 @@
+.sidenav {
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 25px;
+    left: 0px;
+    /*background: lightgray;*/
+    /*overflow-x: hidden;*/
+    padding: 8px 0;
+    height:100%;
+    /*background-blend-mode: overlay, normal;*/
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    linear-gradient(rgba(230, 230, 230, 0.3), rgba(230, 230, 230, 0.3));
+    box-shadow: 1px 0 1px 0 rgba(74, 74, 74, 0.24);
+}
+.bound{
+    height: 1px;
+    background-color: #d8d8d8;
+}
+
+.month {
+    /*position: fixed;*/
+    padding: 5px 10px;
+    /*width: 89%;*/
+    /*left: 3px;*/
+    /*background: #1abc9c;*/
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+    /*top: 400px;*/
+
+}
+
+.month ul li {
+    font-family: HelveticaNeue;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.9px;
+    color: #252624;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+    color: #252624;
+    cursor: pointer;
+}
+
+.month .next {
+    float: right;
+    padding-top: 10px;
+    color: #252624;
+    cursor:pointer;
+}
+
+.accounts{
+    color:gray;
+    /*font-size: 10pt;*/
+    padding: 3px;
+    left:5px;
+    overflow: hidden;
+    width : 219px;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: SFUIText;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #575757;
+}
+.calendars li{
+    padding:2px;
+    overflow: hidden;
+    width : 219px;
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: SFUIText;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #575757;
+}
+.calendars_list{
+    overflow-y:auto;
+    max-height:500px;
+    height:100% !important;
+}
